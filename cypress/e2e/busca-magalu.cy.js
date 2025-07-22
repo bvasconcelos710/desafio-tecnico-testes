@@ -102,7 +102,7 @@ describe('Teste de busca - Magazine Luiza', () => {
     cy.get('[data-testid="product-card-container"]').should('exist');
   });
 
-  it("Aplicar filtros adicionais deve manter o número de resultados ou diminuir", () => {
+  it("Aplica filtros adicionais, deve manter o número de resultados ou diminuir", () => {
     cy.get('input[data-testid=input-search]').type("notebook{enter}");
 
     cy.get('[data-testid="filter-checkbox"]', { timeout: 10000 }).contains("Apple", { matchCase: false }).click();
@@ -142,8 +142,8 @@ describe('Teste de busca - Magazine Luiza', () => {
       });
   });
 
-  // Esse pode falhar pois às vezes alterar a ordenação muda o numero de resultados, o que não é um comportamente comum
-  it("Alterar ordenação não deve alterar o número de resultados", () => {
+  // Esse pode falhar pois às vezes alterar a ordenação muda o numero de resultados, o que não é um comportamento comum
+  it("Altera ordenação, não deve alterar o número de resultados", () => {
     cy.get('input[data-testid=input-search]').type("notebook{enter}");
 
     cy.get('[data-testid="filter-checkbox"]', { timeout: 10000 }).contains("Apple").click();
