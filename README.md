@@ -1,4 +1,4 @@
-# Desafio Técnico - Estágio em Testes de Software 
+# Desafio Técnico - Testes de Software 
 
 Este desafio consiste em testes automatizados end-to-end desenvolvidos com [Cypress](https://www.cypress.io/)
 
@@ -37,6 +37,3 @@ Ao abrir a interface do Cypress:
 - Selecione o tipo de teste e2e;
 - Em seguida selecione o navegador;
 - Por fim selecione arquivo busca-magalu.cy.js.
-
-
-Obs: O desafio de consulta SQL está na raiz do projeto no arquivo consulta-sql.txt
